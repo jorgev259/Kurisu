@@ -169,12 +169,12 @@ async def on_ready():
         print("{} has started! {} has {:,} members!".format(bot.user.name, server.name, server.member_count))
 
         # channels
-        bot.welcome_channel = discord.utils.get(server.channels, name="welcome-and-rules")
-        bot.announcements_channel = discord.utils.get(server.channels, name="announcements")
+        bot.welcome_channel = discord.utils.get(server.channels, name="bienvenida-y-reglas")
+        bot.announcements_channel = discord.utils.get(server.channels, name="anuncios-important")
         bot.helpers_channel = discord.utils.get(server.channels, name="helpers")
         bot.offtopic_channel = discord.utils.get(server.channels, name="off-topic")
         bot.meta_channel = discord.utils.get(server.channels, name="meta")
-        bot.voiceandmusic_channel = discord.utils.get(server.channels, name="voice-and-music")
+        bot.voiceandmusic_channel = discord.utils.get(server.channels, name="voz-y-musica")
         bot.elsewhere_channel = discord.utils.get(server.channels, name="elsewhere")
         bot.mods_channel = discord.utils.get(server.channels, name="mods")
         bot.modlogs_channel = discord.utils.get(server.channels, name="mod-logs")
@@ -191,9 +191,9 @@ async def on_ready():
         bot.op_role = discord.utils.get(server.roles, name="OP")
         bot.superop_role = discord.utils.get(server.roles, name="SuperOP")
         bot.owner_role = discord.utils.get(server.roles, name="Owner")
-        bot.helpers_role = discord.utils.get(server.roles, name="Helpers")
-        bot.onduty3ds_role = discord.utils.get(server.roles, name="On-Duty 3DS")
-        bot.ondutywiiu_role = discord.utils.get(server.roles, name="On-Duty Wii U")
+        bot.helpers_role = discord.utils.get(server.roles, name="Ayudante")
+        bot.onduty3ds_role = discord.utils.get(server.roles, name="Activo 3DS")
+        bot.ondutywiiu_role = discord.utils.get(server.roles, name="Activo Wii U")
         bot.verified_role = discord.utils.get(server.roles, name="Verified")
         bot.trusted_role = discord.utils.get(server.roles, name="Trusted")
         bot.probation_role = discord.utils.get(server.roles, name="Probation")
@@ -201,7 +201,7 @@ async def on_ready():
         bot.nomemes_role = discord.utils.get(server.roles, name="No-Memes")
         bot.nohelp_role = discord.utils.get(server.roles, name="No-Help")
         bot.noembed_role = discord.utils.get(server.roles, name="No-Embed")
-        bot.elsewhere_role = discord.utils.get(server.roles, name="#elsewhere")
+        bot.elsewhere_role = discord.utils.get(server.roles, name="#shitpost")
         bot.eventchat_role = discord.utils.get(server.roles, name="#eventchat")
         bot.everyone_role = server.default_role
 
