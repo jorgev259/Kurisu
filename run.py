@@ -170,7 +170,7 @@ async def on_ready():
 
         # channels
         bot.welcome_channel = discord.utils.get(server.channels, name="bienvenida-y-reglas")
-        bot.announcements_channel = discord.utils.get(server.channels, name="anuncios-important")
+        bot.announcements_channel = discord.utils.get(server.channels, name="anuncios-importantes")
         bot.helpers_channel = discord.utils.get(server.channels, name="helpers")
         bot.offtopic_channel = discord.utils.get(server.channels, name="off-topic")
         bot.meta_channel = discord.utils.get(server.channels, name="meta")
